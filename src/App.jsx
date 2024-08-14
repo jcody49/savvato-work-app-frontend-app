@@ -1,30 +1,14 @@
+// react
 import React from 'react';
+import PropTypes from 'prop-types'
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+// resources
 import './App.css';
 import logo from './logo.svg';
+// components and pages
+import NewPage from './components/NewPage';
 import LoginPage from './pages/login-page/LoginPage';
-
-// NewPage component
-
-function NewPage() {
-  return (
-    <div>
-      <h2>New Page</h2>
-      <p>This is a new page.</p>
-        <Link to="/" className="App-link">Go to Home</Link>
-    </div>
-  );
-}
-
-function Home() {
-    return (
-        <div>
-        <h2>Home</h2>
-        <p>Welcome to the home page.</p>
-            <Link to="/new-page" className="App-link">Go to New Page</Link>
-        </div>
-    );
-}
+import Home from './components/Home';
 
 // App component
 function App() {
