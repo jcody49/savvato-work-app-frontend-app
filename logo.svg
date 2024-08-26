@@ -1,0 +1,15 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <style>
+    .gear { fill: #003366; }
+    .handshake { fill: #ffffff; }
+  </style>
+  <!-- Gear 1 -->
+  <circle cx="70" cy="100" r="40" class="gear"/>
+  <circle cx="70" cy="100" r="30" fill="#ffffff"/>
+  <!-- Gear 2 -->
+  <circle cx="130" cy="100" r="40" class="gear"/>
+  <circle cx="130" cy="100" r="30" fill="#ffffff"/>
+  <!-- Handshake -->
+  <path d="M80 100 L85 105 L115 105 L120 100 L115 95 L85 95 Z" class="handshake"/>
+</svg>
+
