@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import {environment} from "../../_environment/environment";
+
 function LoginPage() {
 
     const [username, setUsername] = useState('');
@@ -9,7 +11,7 @@ function LoginPage() {
     const handleLogin = async () => {
 
         try {
-            const response = await fetch('/public/login', {
+            const response = await fetch(environment.apiUrl + '/public/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
