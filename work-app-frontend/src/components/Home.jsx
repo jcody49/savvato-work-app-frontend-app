@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useState, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 
 export default function Home() {
     // styles
@@ -9,34 +9,34 @@ export default function Home() {
         flexDirection: 'column',
         justifyContent: 'space-between',
         padding: '2rem',
-        border: '2px solid cyan',
+        border: '2px solid grey',
         borderRadius: '10px',
         width: '100%',
     }
-    const formDivStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        padding: '2rem',
-        marginTop: '1rem',
-        border: '1px solid lightblue',
-        borderRadius: '10px',
-        width: '100%',
-        innerHeight: '5vh',
-        gap: '2rem',
-    }
+    // const formDivStyle = {
+    //     display: 'flex',
+    //     flexDirection: 'column',
+    //     justifyContent: 'space-between',
+    //     padding: '2rem',
+    //     marginTop: '1rem',
+    //     border: '1px solid lightblue',
+    //     borderRadius: '10px',
+    //     width: '100%',
+    //     innerHeight: '5vh',
+    //     gap: '2rem',
+    // }
     const buttonStyle = {
         margin: '0.5rem 0',
     }
 
     // setup state variables
-    const [task, setTask] = useState('')
-    const navigate = useNavigate()
+    // const [task, setTask] = useState('')
+    // const navigate = useNavigate()
 
     // retrieve user token for the current session, i.e., as long as user is logged-in
-    useEffect(() => {
-        window.sessionStorage.getItem('authorizedUser')
-    }, [])
+    // useEffect(() => {
+    //     window.sessionStorage.getItem('authorizedUser')
+    // }, [])
 
     /**
      * Updates the task value in the state.
@@ -44,10 +44,10 @@ export default function Home() {
      * @param {Event} e - The event object.
      * @returns {void}
      */
-    const recordTask = (e) => {
-        setTask(e.target.value) // used in generateSteps()
-        console.log('Task name: ',task)
-    }
+    // const recordTask = (e) => {
+    //     setTask(e.target.value) // used in generateSteps()
+    //     console.log('Task name: ',task)
+    // }
     
     /**
      * Redirects to the authentication page.
@@ -60,9 +60,9 @@ export default function Home() {
     /**
      * Generates steps and navigates to '/steps' with the given task state.
      */
-    const generateSteps = () => {
-        navigate('/steps', { state: { taskName: task } });
-    }
+    // const generateSteps = () => {
+    //     navigate('/steps', { state: { taskName: task } });
+    // }
 
     return (
         <div>
@@ -75,7 +75,7 @@ export default function Home() {
                     <Link to="/login" className="App-link">Login</Link>
                 </button>
             </div>
-            <div style={formDivStyle}>
+            {/* <div style={formDivStyle}>
             <form onSubmit={generateSteps}>
                 <label>
                     <input 
@@ -94,8 +94,8 @@ export default function Home() {
                 >
                     Create Steps
                 </button>
-            </form>
-            </div>
+            </form> 
+            </div> */}
         </div>
     );
 }
