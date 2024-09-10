@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { environment } from "../../_environment/environment";
+import { environment } from "../../../../src/_environment/environment.js";
 import { Link } from "react-router-dom";
 
 function NewUserPage() {
