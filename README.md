@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Work App
+This project was setup using `Vite` to work with `React` for the frontend of the project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Prerequisites
+Before getting started, make sure you have the following installed on your machine:
+- Node.js
+- npm or yarn
 
-## Available Scripts
+## Setup
+1. Clone the repository:
 
-In the project directory, you can run:
+```bash
+    git clone https://github.com/savvato-software/savvato-work-app-frontend-app.git
+```
 
-### `npm start`
+2. Navigate to the project directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+    cd work-app-frontend
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install dependencies:
 
-### `npm test`
+```bash
+    npm install
+```
+        or
+```bash
+    yarn install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running the Project
 
-### `npm run build`
+- To run the project locally, use the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+    npm run dev
+```
+        or
+```bash
+    yarn dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- This will start the development server and will display the URL in the terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+    > work-app-frontend@0.0.0 dev
+    > vite
 
-### `npm run eject`
+    Re-optimizing dependencies because lockfile has changed
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    VITE v5.4.2  ready in 378 ms
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ➜  Local:   http://localhost:5173/
+    ➜  Network: use --host to expose
+    ➜  press h + enter to show help
+```
+- For a quick review of all available `Vite` commands, refer [Developers' Guide](/docs/DEVELOPER.md)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Here's a brief overview of the project structure:
 
-## Learn More
+```
+├── public
+│   ├── index.html
+│   └── ...
+├── src
+│   ├── components
+│   │   └── ...
+│   ├── services
+│   │   └── ...
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   ├── index.css
+│   └── ...
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── ...
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you'd like to contribute to the project, please follow these guidelines:
 
-### Code Splitting
+1. Fork the repository.
+2. Create a new branch for your feature/bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
